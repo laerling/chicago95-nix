@@ -14,6 +14,8 @@
       in {
         packages = rec {
           chicago95-gtk-theme = pkgs.callPackage ./nix/package.nix {};
+          chicago95-fonts = pkgs.callPackage ./nix/fonts.nix {};
+          chicago95-icons = pkgs.callPackage ./nix/icons.nix {};
           default = chicago95-gtk-theme;
         };
       }
